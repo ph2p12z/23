@@ -671,3 +671,18 @@ local function toggleHitbox()
 end
 
 HitboxToggle.MouseButton1Click:Connect(toggleHitbox)
+
+local LightingEnabled = true 
+local GrassRemove = false 
+
+local function toggleGrass()
+    GrassRemove = not GrassRemove
+    if LightingEnabled and GrassRemove then
+        sethiddenproperty(game.Workspace.Terrain, "Decoration", false)
+    elseif LightingEnabled and not GrassRemove then
+        sethiddenproperty(game.Workspace.Terrain, "Decoration", true)
+    end
+end
+
+GrassToggle.MouseButton1Click:Connect(toggleGrass)
+
