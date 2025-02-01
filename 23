@@ -679,10 +679,15 @@ local function toggleGrass()
     GrassRemove = not GrassRemove
     if LightingEnabled and GrassRemove then
         sethiddenproperty(game.Workspace.Terrain, "Decoration", false)
+        GrassToggle.BackgroundColor3 = Color3.new(75/255, 103/255, 154/255)
     elseif LightingEnabled and not GrassRemove then
         sethiddenproperty(game.Workspace.Terrain, "Decoration", true)
+        GrassToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725) 
     end
 end
+
+
+GrassToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725) 
 
 GrassToggle.MouseButton1Click:Connect(toggleGrass)
 
