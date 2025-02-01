@@ -1,0 +1,818 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local CombatButton = Instance.new("TextButton")
+local CombatTab = Instance.new("Frame")
+local HitboxToggle = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local SAToggle = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local LNToggle = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Recoil = Instance.new("TextBox")
+local TextLabel_4 = Instance.new("TextLabel")
+local Spread = Instance.new("TextBox")
+local TextLabel_5 = Instance.new("TextLabel")
+local WorldButton = Instance.new("TextButton")
+local WorldTab = Instance.new("Frame")
+local GrassToggle = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local Ambient = Instance.new("TextButton")
+local VisualButton = Instance.new("TextButton")
+local VisualTab = Instance.new("Frame")
+local EspToggle = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local CrossToggle = Instance.new("TextButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local BulletTracerToggle = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local ModelChanger = Instance.new("TextButton")
+local Fov = Instance.new("TextBox")
+local TextLabel_10 = Instance.new("TextLabel")
+local MiscButton = Instance.new("TextButton")
+local MiscTab = Instance.new("Frame")
+local XrayToggle = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local AtvFly = Instance.new("TextButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local BloodToggle = Instance.new("TextButton")
+local TextLabel_13 = Instance.new("TextLabel")
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.new(0, 0, 0)
+Main.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+Main.Position = UDim2.new(0, 0, -0.00166668359, 0)
+Main.Size = UDim2.new(0, 714, 0, 339)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.new(0, 0, 0)
+Title.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+Title.BorderSizePixel = 2
+Title.Size = UDim2.new(0, 714, 0, 37)
+
+Title_2.Name = "Title"
+Title_2.Parent = Title
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.BorderColor3 = Color3.new(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(-0.0532212891, 0, -0.216216221, 0)
+Title_2.Size = UDim2.new(0, 200, 0, 50)
+Title_2.Font = Enum.Font.Sarpanch
+Title_2.Text = "Axis.xyz"
+Title_2.TextColor3 = Color3.new(1, 1, 1)
+Title_2.TextSize = 27
+
+CombatButton.Name = "CombatButton"
+CombatButton.Parent = Main
+CombatButton.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+CombatButton.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+CombatButton.BorderSizePixel = 2
+CombatButton.Position = UDim2.new(0.0252100844, 0, 0.123893805, 0)
+CombatButton.Size = UDim2.new(0, 150, 0, 45)
+CombatButton.Font = Enum.Font.Sarpanch
+CombatButton.Text = "Combat"
+CombatButton.TextColor3 = Color3.new(1, 1, 1)
+CombatButton.TextSize = 24
+
+CombatTab.Name = "CombatTab"
+CombatTab.Parent = CombatButton
+CombatTab.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+CombatTab.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+CombatTab.BorderSizePixel = 2
+CombatTab.Position = UDim2.new(-0.00145660399, 0, 0.983893454, 0)
+CombatTab.Size = UDim2.new(0, 150, 0, 244)
+
+HitboxToggle.Name = "HitboxToggle"
+HitboxToggle.Parent = CombatTab
+HitboxToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+HitboxToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+HitboxToggle.Position = UDim2.new(0.0720000193, 0, 0.0778689757, 0)
+HitboxToggle.Size = UDim2.new(0, 19, 0, 18)
+HitboxToggle.Font = Enum.Font.SourceSans
+HitboxToggle.Text = " "
+HitboxToggle.TextColor3 = Color3.new(0, 0, 0)
+HitboxToggle.TextSize = 14
+
+TextLabel.Parent = HitboxToggle
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(1.29473722, 0, -0.888888896, 0)
+TextLabel.Size = UDim2.new(0, 79, 0, 50)
+TextLabel.Font = Enum.Font.Sarpanch
+TextLabel.Text = "Hitbox"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 25
+
+SAToggle.Name = "SAToggle"
+SAToggle.Parent = CombatTab
+SAToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+SAToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+SAToggle.Position = UDim2.new(0.0720000193, 0, 0.20081979, 0)
+SAToggle.Size = UDim2.new(0, 19, 0, 18)
+SAToggle.Font = Enum.Font.SourceSans
+SAToggle.Text = " "
+SAToggle.TextColor3 = Color3.new(0, 0, 0)
+SAToggle.TextSize = 14
+
+TextLabel_2.Parent = SAToggle
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(1.71578979, 0, -0.888888896, 0)
+TextLabel_2.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_2.Font = Enum.Font.Sarpanch
+TextLabel_2.Text = "SilentAim"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 25
+
+LNToggle.Name = "LNToggle"
+LNToggle.Parent = CombatTab
+LNToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+LNToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+LNToggle.Position = UDim2.new(0.0653333515, 0, 0.327868968, 0)
+LNToggle.Size = UDim2.new(0, 19, 0, 18)
+LNToggle.Font = Enum.Font.SourceSans
+LNToggle.Text = " "
+LNToggle.TextColor3 = Color3.new(0, 0, 0)
+LNToggle.TextSize = 14
+
+TextLabel_3.Parent = LNToggle
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(1.71578979, 0, -0.888888896, 0)
+TextLabel_3.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_3.Font = Enum.Font.Sarpanch
+TextLabel_3.Text = "Longneck"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 25
+
+Recoil.Name = "Recoil"
+Recoil.Parent = CombatTab
+Recoil.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+Recoil.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+Recoil.Position = UDim2.new(0.653333247, 0, 0.647540987, 0)
+Recoil.Size = UDim2.new(0, 36, 0, 28)
+Recoil.Font = Enum.Font.Sarpanch
+Recoil.Text = "0"
+Recoil.TextColor3 = Color3.new(1, 1, 1)
+Recoil.TextSize = 14
+
+TextLabel_4.Parent = Recoil
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(-2.44444442, 0, -0.392857134, 0)
+TextLabel_4.Size = UDim2.new(0, 85, 0, 50)
+TextLabel_4.Font = Enum.Font.Sarpanch
+TextLabel_4.Text = "Recoil"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 25
+
+Spread.Name = "Spread"
+Spread.Parent = CombatTab
+Spread.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+Spread.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+Spread.Position = UDim2.new(0.653333247, 0, 0.762295067, 0)
+Spread.Size = UDim2.new(0, 36, 0, 28)
+Spread.Font = Enum.Font.Sarpanch
+Spread.Text = "0"
+Spread.TextColor3 = Color3.new(1, 1, 1)
+Spread.TextSize = 14
+
+TextLabel_5.Parent = Spread
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(-2.44444442, 0, -0.392857134, 0)
+TextLabel_5.Size = UDim2.new(0, 85, 0, 50)
+TextLabel_5.Font = Enum.Font.Sarpanch
+TextLabel_5.Text = "Spread"
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextSize = 25
+
+WorldButton.Name = "WorldButton"
+WorldButton.Parent = Main
+WorldButton.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+WorldButton.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+WorldButton.BorderSizePixel = 2
+WorldButton.Position = UDim2.new(0.741443992, 0, 0.123893805, 0)
+WorldButton.Size = UDim2.new(0, 150, 0, 45)
+WorldButton.Font = Enum.Font.Sarpanch
+WorldButton.Text = "World"
+WorldButton.TextColor3 = Color3.new(1, 1, 1)
+WorldButton.TextSize = 24
+
+WorldTab.Name = "WorldTab"
+WorldTab.Parent = WorldButton
+WorldTab.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+WorldTab.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+WorldTab.BorderSizePixel = 2
+WorldTab.Position = UDim2.new(-0.000504150405, 0, 1.00000036, 0)
+WorldTab.Size = UDim2.new(0, 150, 0, 243)
+
+GrassToggle.Name = "GrassToggle"
+GrassToggle.Parent = WorldTab
+GrassToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+GrassToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+GrassToggle.Position = UDim2.new(0.105333254, 0, 0.0362107381, 0)
+GrassToggle.Size = UDim2.new(0, 19, 0, 18)
+GrassToggle.Font = Enum.Font.SourceSans
+GrassToggle.Text = " "
+GrassToggle.TextColor3 = Color3.new(0, 0, 0)
+GrassToggle.TextSize = 14
+
+TextLabel_6.Parent = GrassToggle
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.978949308, 0, -1.05555558, 0)
+TextLabel_6.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_6.Font = Enum.Font.Sarpanch
+TextLabel_6.Text = "Grass"
+TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_6.TextSize = 25
+
+Ambient.Name = "Ambient"
+Ambient.Parent = WorldTab
+Ambient.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+Ambient.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+Ambient.Position = UDim2.new(0.100000001, 0, 0.172839701, 0)
+Ambient.Size = UDim2.new(0, 98, 0, 25)
+Ambient.Font = Enum.Font.Sarpanch
+Ambient.Text = "Ambient"
+Ambient.TextColor3 = Color3.new(1, 1, 1)
+Ambient.TextSize = 21
+
+VisualButton.Name = "VisualButton"
+VisualButton.Parent = Main
+VisualButton.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+VisualButton.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+VisualButton.BorderSizePixel = 2
+VisualButton.Position = UDim2.new(0.259741575, 0, 0.123893805, 0)
+VisualButton.Size = UDim2.new(0, 150, 0, 45)
+VisualButton.Font = Enum.Font.Sarpanch
+VisualButton.Text = "Visuals"
+VisualButton.TextColor3 = Color3.new(1, 1, 1)
+VisualButton.TextSize = 24
+
+VisualTab.Name = "VisualTab"
+VisualTab.Parent = VisualButton
+VisualTab.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+VisualTab.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+VisualTab.BorderSizePixel = 2
+VisualTab.Position = UDim2.new(-0.000896402984, 0, 1.00000036, 0)
+VisualTab.Size = UDim2.new(0, 150, 0, 243)
+
+EspToggle.Name = "EspToggle"
+EspToggle.Parent = VisualTab
+EspToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+EspToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+EspToggle.Position = UDim2.new(0.0720000193, 0, 0.0778689757, 0)
+EspToggle.Size = UDim2.new(0, 19, 0, 18)
+EspToggle.Font = Enum.Font.SourceSans
+EspToggle.Text = " "
+EspToggle.TextColor3 = Color3.new(0, 0, 0)
+EspToggle.TextSize = 14
+
+TextLabel_7.Parent = EspToggle
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(1.29473722, 0, -0.888888896, 0)
+TextLabel_7.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_7.Font = Enum.Font.Sarpanch
+TextLabel_7.Text = "Esp"
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextSize = 25
+
+CrossToggle.Name = "CrossToggle"
+CrossToggle.Parent = VisualTab
+CrossToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+CrossToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+CrossToggle.Position = UDim2.new(0.0720000193, 0, 0.176634431, 0)
+CrossToggle.Size = UDim2.new(0, 19, 0, 18)
+CrossToggle.Font = Enum.Font.SourceSans
+CrossToggle.Text = " "
+CrossToggle.TextColor3 = Color3.new(0, 0, 0)
+CrossToggle.TextSize = 14
+
+TextLabel_8.Parent = CrossToggle
+TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(1.82105374, 0, -0.888888896, 0)
+TextLabel_8.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_8.Font = Enum.Font.Sarpanch
+TextLabel_8.Text = "Crosshair"
+TextLabel_8.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_8.TextSize = 25
+
+BulletTracerToggle.Name = "BulletTracerToggle"
+BulletTracerToggle.Parent = VisualTab
+BulletTracerToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+BulletTracerToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+BulletTracerToggle.Position = UDim2.new(0.0720000193, 0, 0.300091207, 0)
+BulletTracerToggle.Size = UDim2.new(0, 19, 0, 18)
+BulletTracerToggle.Font = Enum.Font.SourceSans
+BulletTracerToggle.Text = " "
+BulletTracerToggle.TextColor3 = Color3.new(0, 0, 0)
+BulletTracerToggle.TextSize = 14
+
+TextLabel_9.Parent = BulletTracerToggle
+TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_9.BackgroundTransparency = 1
+TextLabel_9.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(2.24210644, 0, -0.888888896, 0)
+TextLabel_9.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_9.Font = Enum.Font.Sarpanch
+TextLabel_9.Text = "BulletTracer"
+TextLabel_9.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_9.TextSize = 25
+
+ModelChanger.Name = "ModelChanger"
+ModelChanger.Parent = VisualTab
+ModelChanger.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+ModelChanger.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+ModelChanger.Position = UDim2.new(0.0666666701, 0, 0.436214179, 0)
+ModelChanger.Size = UDim2.new(0, 98, 0, 25)
+ModelChanger.Font = Enum.Font.Sarpanch
+ModelChanger.Text = "ModelChanger"
+ModelChanger.TextColor3 = Color3.new(1, 1, 1)
+ModelChanger.TextSize = 14
+
+Fov.Name = "Fov"
+Fov.Parent = VisualTab
+Fov.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+Fov.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+Fov.Position = UDim2.new(0.653333247, 0, 0.647540987, 0)
+Fov.Size = UDim2.new(0, 36, 0, 28)
+Fov.Font = Enum.Font.Sarpanch
+Fov.Text = "0"
+Fov.TextColor3 = Color3.new(1, 1, 1)
+Fov.TextSize = 14
+
+TextLabel_10.Parent = Fov
+TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(-2.44444442, 0, -0.392857134, 0)
+TextLabel_10.Size = UDim2.new(0, 85, 0, 50)
+TextLabel_10.Font = Enum.Font.Sarpanch
+TextLabel_10.Text = "Field of view"
+TextLabel_10.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_10.TextSize = 17
+
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = Main
+MiscButton.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+MiscButton.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+MiscButton.BorderSizePixel = 2
+MiscButton.Position = UDim2.new(0.497081846, 0, 0.123893805, 0)
+MiscButton.Size = UDim2.new(0, 150, 0, 45)
+MiscButton.Font = Enum.Font.Sarpanch
+MiscButton.Text = "Misc"
+MiscButton.TextColor3 = Color3.new(1, 1, 1)
+MiscButton.TextSize = 24
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = MiscButton
+MiscTab.BackgroundColor3 = Color3.new(0.0823529, 0.0823529, 0.0823529)
+MiscTab.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+MiscTab.BorderSizePixel = 2
+MiscTab.Position = UDim2.new(-0.00420165993, 0, 0.983893275, 0)
+MiscTab.Size = UDim2.new(0, 150, 0, 244)
+
+XrayToggle.Name = "XrayToggle"
+XrayToggle.Parent = MiscTab
+XrayToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+XrayToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+XrayToggle.Position = UDim2.new(0.0786665827, 0, 0.07417541, 0)
+XrayToggle.Size = UDim2.new(0, 19, 0, 18)
+XrayToggle.Font = Enum.Font.SourceSans
+XrayToggle.Text = " "
+XrayToggle.TextColor3 = Color3.new(0, 0, 0)
+XrayToggle.TextSize = 14
+
+TextLabel_11.Parent = XrayToggle
+TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_11.BackgroundTransparency = 1
+TextLabel_11.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.978949308, 0, -1.05555558, 0)
+TextLabel_11.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_11.Font = Enum.Font.Sarpanch
+TextLabel_11.Text = "Xray"
+TextLabel_11.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_11.TextSize = 25
+
+AtvFly.Name = "AtvFly"
+AtvFly.Parent = MiscTab
+AtvFly.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+AtvFly.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+AtvFly.Position = UDim2.new(0.0786665827, 0, 0.201224595, 0)
+AtvFly.Size = UDim2.new(0, 19, 0, 18)
+AtvFly.Font = Enum.Font.SourceSans
+AtvFly.Text = " "
+AtvFly.TextColor3 = Color3.new(0, 0, 0)
+AtvFly.TextSize = 14
+
+TextLabel_12.Parent = AtvFly
+TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_12.BackgroundTransparency = 1
+TextLabel_12.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.978949308, 0, -1.05555558, 0)
+TextLabel_12.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_12.Font = Enum.Font.Sarpanch
+TextLabel_12.Text = "Atv Fly"
+TextLabel_12.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_12.TextSize = 25
+
+BloodToggle.Name = "BloodToggle"
+BloodToggle.Parent = MiscTab
+BloodToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+BloodToggle.BorderColor3 = Color3.new(0.294118, 0.403922, 0.603922)
+BloodToggle.Position = UDim2.new(0.0786665827, 0, 0.328273773, 0)
+BloodToggle.Size = UDim2.new(0, 19, 0, 18)
+BloodToggle.Font = Enum.Font.SourceSans
+BloodToggle.Text = " "
+BloodToggle.TextColor3 = Color3.new(0, 0, 0)
+BloodToggle.TextSize = 14
+
+TextLabel_13.Parent = BloodToggle
+TextLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_13.BackgroundTransparency = 1
+TextLabel_13.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.978949308, 0, -1.05555558, 0)
+TextLabel_13.Size = UDim2.new(0, 79, 0, 50)
+TextLabel_13.Font = Enum.Font.Sarpanch
+TextLabel_13.Text = "Blood"
+TextLabel_13.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_13.TextSize = 25
+local TweenService = game:GetService("TweenService")
+
+
+local function createDropdownAnimation(button, tab)
+	local isOpen = false
+	local tabHeight = tab.Size.Y.Offset
+
+
+	tab.Position = UDim2.new(tab.Position.X.Scale, tab.Position.X.Offset, 0, -tabHeight)
+	tab.Visible = false
+
+	button.MouseButton1Click:Connect(function()
+		isOpen = not isOpen
+		tab.Visible = true
+		local goal = {}
+		goal.Position = isOpen and UDim2.new(tab.Position.X.Scale, tab.Position.X.Offset, 1, 0) or UDim2.new(tab.Position.X.Scale, tab.Position.X.Offset, 0, -tabHeight)
+
+		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tween = TweenService:Create(tab, tweenInfo, goal)
+		tween:Play()
+
+
+		if not isOpen then
+			tween.Completed:Connect(function()
+				tab.Visible = false
+			end)
+		end
+	end)
+end
+
+
+createDropdownAnimation(CombatButton, CombatTab)
+createDropdownAnimation(WorldButton, WorldTab)
+createDropdownAnimation(VisualButton, VisualTab)
+createDropdownAnimation(MiscButton, MiscTab)
+local FOVCircle = Drawing.new("Circle")
+FOVCircle.Visible = true
+FOVCircle.Radius = 180
+FOVCircle.Thickness = 2
+FOVCircle.Filled = false
+FOVCircle.Color = Color3.fromRGB(255, 255, 255)
+FOVCircle.Position = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, workspace.CurrentCamera.ViewportSize.Y / 2)
+
+local snapLine = Drawing.new("Line")
+snapLine.Visible = false
+snapLine.Color = Color3.fromRGB(255, 255, 255)
+snapLine.Thickness = 1
+
+local targetCircle = Drawing.new("Circle")
+targetCircle.Visible = false
+targetCircle.Thickness = 1
+targetCircle.Color = Color3.fromRGB(255, 255, 255)
+targetCircle.Radius = 2
+targetCircle.Filled = false
+
+local runService = game:GetService("RunService")
+local Classes = getrenv()._G.classes
+local CameraClient = Classes.Camera
+local FPSClient = Classes.FPS
+local Camera = cloneref(game:GetService("Workspace").CurrentCamera)
+
+local step = 0
+
+local validGuns = {
+    "AR15", "C9", "Crossbow", "Bow", "EnergyRifle", "GaussRifle",
+    "HMAR", "KABAR", "LeverActionRifle", "M4A1", "PipePistol",
+    "PipeSMG", "PumpShotgun", "SCAR", "SVD", "USP9", "UZI", "Blunderbuss"
+}
+
+function IsValidGun(gun)
+    return table.find(validGuns, tostring(gun)) ~= nil
+end
+
+function GetClosestTarget(maxDistance)
+    local closestTarget, targetVelocity, closestDistance = nil, nil, math.huge
+    for i, v in next, Classes.Player.EntityMap do
+        if (v.type == "Player" or v.type == "Soldier") and not v.sleeping and v.model:FindFirstChild("HumanoidRootPart") then
+            local distanceToPlayer = (v.model.HumanoidRootPart.Position - Camera.CFrame.Position).Magnitude
+            local screenPoint = Camera:WorldToViewportPoint(v.model.Head.Position)
+            local center = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+            local distanceFromCenter = (Vector2.new(screenPoint.X, screenPoint.Y) - center).Magnitude
+            if distanceToPlayer <= maxDistance and distanceFromCenter <= FOVCircle.Radius and distanceToPlayer < closestDistance then
+                closestTarget = v.model
+                targetVelocity = v.velocityVector
+                closestDistance = distanceToPlayer
+            end
+        end
+    end
+    return closestTarget, targetVelocity
+end
+
+function CalculateBulletDrop(tPos, tVel, cPos, pSpeed, pDrop)
+    local dTT = (tPos - cPos).Magnitude
+    local tTT = dTT / pSpeed
+    local sVE = 8.8 - (pSpeed / (400 + pSpeed / 35))
+    local horizontalVel = Vector3.new(tVel.X, 0, tVel.Z) * 6.9
+    local verticalVel = Vector3.new(0, tVel.Y, 0) * 3
+    local adjustedVel = horizontalVel + verticalVel
+    local pTP = tPos + (adjustedVel * tTT)
+    local dP = -pDrop ^ (tTT * pDrop) + 3
+    local pPWD = pTP - Vector3.new(0, dP, 0)
+    return pPWD
+end
+
+local oldGetCFrame = CameraClient.GetCFrame
+local SAToggleEnabled = false
+
+local function toggleSA()
+    SAToggleEnabled = not SAToggleEnabled
+    if SAToggleEnabled then
+        CameraClient.GetCFrame = function()
+            local closest, velocityVector = GetClosestTarget(1000)
+            local equippedData = FPSClient.GetEquippedItem()
+            if equippedData and closest and closest:FindFirstChild("HumanoidRootPart") and IsValidGun(equippedData.type) then
+                local itemClass = Classes[equippedData.type]
+                if itemClass then
+                    local projectileSpeed = itemClass.ProjectileSpeed
+                    local projectileDrop = itemClass.ProjectileDrop
+                    local predictedPosition = CalculateBulletDrop(closest.Head.Position, velocityVector, Camera.CFrame.Position, projectileSpeed, projectileDrop)
+                    return CFrame.new(Camera.CFrame.Position, predictedPosition)
+                end
+            end
+            return oldGetCFrame()
+        end
+        SAToggle.BackgroundColor3 = Color3.new(75/255, 103/255, 154/255) 
+    else
+        CameraClient.GetCFrame = oldGetCFrame
+        SAToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725) 
+    end
+end
+
+
+SAToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725) 
+
+SAToggle.MouseButton1Click:Connect(toggleSA)
+
+runService.RenderStepped:Connect(function(deltaTime)
+    FOVCircle.Position = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, workspace.CurrentCamera.ViewportSize.Y / 2)
+
+    local brightness = (math.sin(step) + 1) / 2
+    local intensity = math.floor(brightness * 255)
+    FOVCircle.Color = Color3.fromRGB(intensity, intensity, intensity)
+
+    step = step + deltaTime * 2
+
+    local closest, _ = GetClosestTarget(1000)
+    if closest and closest:FindFirstChild("Head") then
+        local headPosition = Camera:WorldToViewportPoint(closest.Head.Position)
+        snapLine.From = FOVCircle.Position
+        snapLine.To = Vector2.new(headPosition.X, headPosition.Y)
+        snapLine.Visible = true
+        targetCircle.Position = Vector2.new(headPosition.X, headPosition.Y)
+        targetCircle.Visible = true
+    else
+        snapLine.Visible = false
+        targetCircle.Visible = false
+    end
+end)
+local function toggleHitbox()
+    if HitboxToggle.BackgroundColor3 == Color3.new(0.113725, 0.113725, 0.113725) then
+        HitboxToggle.BackgroundColor3 = Color3.new(75/255, 103/255, 154/255)
+        
+        local ReplicatedStorage = game:GetService('ReplicatedStorage')
+        local LocalPlayer = game:GetService('Players').LocalPlayer
+        local Workspace = game:GetService('Workspace')
+        local Camera = game:GetService('Workspace').CurrentCamera
+        local Ignore = Workspace:FindFirstChild('Ignore')
+        local FPSArms = Ignore:FindFirstChild('FPSArms')
+        local ClientPlayer = Ignore:FindFirstChild('LocalCharacter')
+        local SleepAnimationId = "rbxassetid://13280887764"
+
+        local HeadIndex
+        HeadIndex = hookmetamethod(game, "__index", newcclosure(function(Self, Index)
+            if (tostring(Self) == "Head" and Index == "Size") then
+                return Vector3.new(1.672248125076294, 0.835624098777771, 0.835624098777771)
+            end
+            return HeadIndex(Self, Index)
+        end))
+
+        local TorsoIndex
+        TorsoIndex = hookmetamethod(game, "__index", newcclosure(function(Self, Index)
+            if (tostring(Self) == "Torso" and Index == "Size") then
+                return Vector3.new(0.6530659198760986, 2.220424175262451, 1.4367451667785645)
+            end
+            return TorsoIndex(Self, Index)
+        end))
+
+        function IsSleeping(Player)
+            local Animations = Player.AnimationController:GetPlayingAnimationTracks()
+            for i, v in pairs(Animations) do
+                if (v.IsPlaying and v.Animation.AnimationId == SleepAnimationId) then
+                    return true
+                end
+            end
+            return false
+        end
+
+        function GetPlayers()
+            local Players = {}
+            for i,v in next, Workspace:GetChildren() do
+                if (v:IsA('Model') and v:FindFirstChild('HumanoidRootPart') and tostring(v.Parent) ~= 'FPSArms') then
+                    table.insert(Players, v)
+                end
+            end
+            return Players
+        end
+
+        Workspace.ChildAdded:Connect(function(child)
+            if (child:IsA('Model') and child:FindFirstChild('HumanoidRootPart')) then
+                local head = child:FindFirstChild('Head')
+                if (head and not IsSleeping(child)) then
+                    head.Size = Vector3.new(8.8,6,8.8)
+                    head.Transparency = 1
+                    head.CanCollide = false
+                end
+
+                local Torso = child:FindFirstChild('Torso')
+                if (Torso and not IsSleeping(child)) then
+                    Torso.Size = Vector3.new(8.5,6.5,8.5)
+                    Torso.Transparency = 1
+                    Torso.CanCollide = false
+                end
+            end
+        end)
+
+        for _, player in pairs(GetPlayers()) do
+            local Head = player:FindFirstChild("Head")
+            if (Head and not IsSleeping(player)) then
+                Head.Size = Vector3.new(8.8,6,8.8)
+                Head.Transparency = 1
+                Head.CanCollide = false
+            end
+
+            local Torso = player:FindFirstChild("Torso")
+            if (Torso and not IsSleeping(player)) then
+                Torso.Size = Vector3.new(8.5,6.5,8.5)
+                Torso.Transparency = 1
+                Torso.CanCollide = false
+            end
+        end
+    else
+        HitboxToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+     
+        local ReplicatedStorage = game:GetService('ReplicatedStorage')
+        local LocalPlayer = game:GetService('Players').LocalPlayer
+        local Workspace = game:GetService('Workspace')
+        local Camera = game:GetService('Workspace').CurrentCamera
+        local Ignore = Workspace:FindFirstChild('Ignore')
+        local FPSArms = Ignore:FindFirstChild('FPSArms')
+        local ClientPlayer = Ignore:FindFirstChild('LocalCharacter')
+        local SleepAnimationId = "rbxassetid://13280887764"
+
+        local HeadIndex
+        HeadIndex = hookmetamethod(game, "__index", newcclosure(function(Self, Index)
+            if (tostring(Self) == "Head" and Index == "Size") then
+                return Vector3.new(1.672248125076294, 0.835624098777771, 0.835624098777771)
+            end
+            return HeadIndex(Self, Index)
+        end))
+
+        local TorsoIndex
+        TorsoIndex = hookmetamethod(game, "__index", newcclosure(function(Self, Index)
+            if (tostring(Self) == "Torso" and Index == "Size") then
+                return Vector3.new(0.6530659198760986, 2.220424175262451, 1.4367451667785645)
+            end
+            return TorsoIndex(Self, Index)
+        end))
+
+        function IsSleeping(Player)
+            local Animations = Player.AnimationController:GetPlayingAnimationTracks()
+            for i, v in pairs(Animations) do
+                if (v.IsPlaying and v.Animation.AnimationId == SleepAnimationId) then
+                    return true
+                end
+            end
+            return false
+        end
+
+        function GetPlayers()
+            local Players = {}
+            for i,v in next, Workspace:GetChildren() do
+                if (v:IsA('Model') and v:FindFirstChild('HumanoidRootPart') and tostring(v.Parent) ~= 'FPSArms') then
+                    table.insert(Players, v)
+                end
+            end
+            return Players
+        end
+
+        Workspace.ChildAdded:Connect(function(child)
+            if (child:IsA('Model') and child:FindFirstChild('HumanoidRootPart')) then
+                local head = child:FindFirstChild('Head')
+                if (head and not IsSleeping(child)) then
+                    head.Size = Vector3.new(1.672248125076294, 0.835624098777771, 0.835624098777771)
+                    head.Transparency = 0
+                    head.CanCollide = true
+                end
+
+                local Torso = child:FindFirstChild('Torso')
+                if (Torso and not IsSleeping(child)) then
+                    Torso.Size = Vector3.new(0.6530659198760986, 2.220424175262451, 1.4367451667785645)
+                    Torso.Transparency = 0
+                    Torso.CanCollide = true
+                end
+            end
+        end)
+
+        for _, player in pairs(GetPlayers()) do
+            local Head = player:FindFirstChild("Head")
+            if (Head and not IsSleeping(player)) then
+                Head.Size = Vector3.new(1.672248125076294, 0.835624098777771, 0.835624098777771)
+                Head.Transparency = 0
+                Head.CanCollide = true
+            end
+
+            local Torso = player:FindFirstChild("Torso")
+            if (Torso and not IsSleeping(player)) then
+                Torso.Size = Vector3.new(0.6530659198760986, 2.220424175262451, 1.4367451667785645)
+                Torso.Transparency = 0
+                Torso.CanCollide = true
+            end
+        end
+    end
+end
+
+HitboxToggle.MouseButton1Click:Connect(toggleHitbox)
+
+local LightingEnabled = true 
+local GrassRemove = false 
+
+local function toggleGrass()
+    GrassRemove = not GrassRemove
+    if LightingEnabled and GrassRemove then
+        sethiddenproperty(game.Workspace.Terrain, "Decoration", false)
+        GrassToggle.BackgroundColor3 = Color3.new(75/255, 103/255, 154/255)
+    elseif LightingEnabled and not GrassRemove then
+        sethiddenproperty(game.Workspace.Terrain, "Decoration", true)
+        GrassToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725) 
+    end
+end
+
+
+GrassToggle.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725) 
+
+GrassToggle.MouseButton1Click:Connect(toggleGrass)
